@@ -1,9 +1,10 @@
 'use strict';
 
 //Prompt the user 5 different times about you.
+var userName = prompt('Welcome. What is your first name?');
 
 // Play a game message
-var confirmQuiz = confirm('Hello, would you like to take a quiz?');
+var confirmQuiz = confirm('Hi ' + userName + '. To learn more about Michael, would you like to take a quiz?');
 
 if(confirmQuiz){
   console.log('Awesome! Lets get started!');
