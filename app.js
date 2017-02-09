@@ -1,5 +1,4 @@
-'use strict';
-
+/*'use strict';
 //Prompt the user 5 different times about you.
 var userName = prompt('Welcome. What is your first name?');
 
@@ -15,7 +14,10 @@ if(confirmQuiz){
 // Question 1
 var quizResponseOne = prompt('Please Answer with Y or N. Does Michael really like movies?');
 
-if(quizResponseOne.toUpperCase() === 'Y'){
+// edge cases.
+// could also do below: quizResponseOne.charAt(0).toUpperCase()
+
+if(quizResponseOne.toUpperCase() === 'Y' || quizResponseOne.toLowerCase() === 'yes'){
   console.log('Yes, Michael really likes movies.');
 } else {
   console.log('No, Michael really likes movies.');
@@ -58,3 +60,4 @@ if(quizResponseFive.toUpperCase() === 'Y'){
 }
 
 // The End.
+*/
