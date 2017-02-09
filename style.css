@@ -1,1 +1,14 @@
-/*This is a CSS comment*/
+body {
+  background-color: lightgrey;
+  padding: 30px;
+}
+h1 {
+  font-family: arial;
+  color: white;
+  font-size: 12em;
+}
+h2 {
+  font-family: times;
+  color: grey;
+  font-size: 4em;
+}
