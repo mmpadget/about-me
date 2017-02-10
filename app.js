@@ -23,7 +23,7 @@ var w3 = 'Incorrect, Michael doesn\'t own dogs.';
 var w4 = 'Incorrect, Michael does love music.';
 var w5 = 'Incorrect, Michael doesn\'t drive to class';
 
-/* ### Start of Working Numberic Input ###
+// ### Start of Working Numberic Input ###
 // Guess the number of years I have worked in Retail Technology.
 var yearsGuess; // Prompt, string to integer.
 var yearsAnswer = '10';
@@ -48,13 +48,13 @@ for (var i = 0; i < 4; i++) {
     // If incorrect, or false, run this code. Keep asking again until out of questions.
   }
 }
-### End of Working Numberic Input ### */
+// ### End of Working Numberic Input ###
 
 // ### Start of Multiple Correct Answers ###
-var companiesQuestion;
-var companiesWorked = 2; // Number of guesses allowed. Should be 6.
-//var companiesWorked = ['Apple', 'Hecker', 'Google', 'Microsoft', 'Amazon', 'LinkedIn', 'Facebook', 'Twitter'];
-var companiesCorrect = ['Apple', 'Hecker'];
+// var companiesQuestion;
+// var companiesWorked = 2; // Number of guesses allowed. Should be 6.
+// //var companiesWorked = ['Apple', 'Hecker', 'Google', 'Microsoft', 'Amazon', 'LinkedIn', 'Facebook', 'Twitter'];
+// var companiesCorrect = ['Apple', 'Hecker'];
 
 // if (companiesQuestion === 'Apple' || companiesQuestion === 'Hecker') {
 //   console.log('correct');
@@ -68,16 +68,16 @@ var companiesCorrect = ['Apple', 'Hecker'];
 //   console.log('wrong');
 // }  // Always true?
 
-for (var i = 0; i < companiesWorked; i++) {
-  var companiesQuestion = prompt('Guess which companies I have worked for. You have six guesses.');
-  if ('companiesQuestion' === 'companiesCorrect') {
-    console.log('correct');
-    break;
-  } else {
-    console.log(alert('Incorrect. You have ' + (companiesWorked -= 1) + ' guesses left.'));
-    // If incorrect, or false, run this code. Keep asking again until out of questions.
-  }
-}
+// for (var i = 0; i < companiesWorked; i++) {
+//   var companiesQuestion = prompt('Guess which companies I have worked for. You have six guesses.');
+//   if ('companiesQuestion' === 'companiesCorrect') {
+//     console.log('correct');
+//     break;
+//   } else {
+//     console.log(alert('Incorrect. You have ' + (companiesWorked -= 1) + ' guesses left.'));
+//     // If incorrect, or false, run this code. Keep asking again until out of questions.
+//   }
+// }
 
 // //google array method. array.includes
 // //trying to compare.
