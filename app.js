@@ -23,11 +23,12 @@ var w3 = 'Incorrect, Michael doesn\'t own dogs.';
 var w4 = 'Incorrect, Michael does love music.';
 var w5 = 'Incorrect, Michael doesn\'t drive to class';
 
+/* ### Start of Working Numberic Input ###
 // Guess the number of years I have worked in Retail Technology.
 var yearsGuess; // Prompt, string to integer.
 var yearsAnswer = '10';
 var answerGuesses = 4;
-var wrongGuesses; // Varialbe to hold how many wrong answers.
+var wrongGuesses; // Variable to hold how many wrong answers.
 
 // Test condition. Indicates to the user whether the guess is 'too high' or 'too low.
 for (var i = 0; i < 4; i++) {
@@ -47,11 +48,43 @@ for (var i = 0; i < 4; i++) {
     // If incorrect, or false, run this code. Keep asking again until out of questions.
   }
 }
+### End of Working Numberic Input ### */
 
-//var companiesQuestion;
-// var companiesWorked = [Apple, Google, Microsoft, Amazon, LinkedIn, Facebook, Twitter, Hecker];
-// var companiesCorrect;
-//
+// ### Start of Multiple Correct Answers ###
+var companiesQuestion;
+var companiesWorked = 2; // Number of guesses allowed. Should be 6.
+//var companiesWorked = ['Apple', 'Hecker', 'Google', 'Microsoft', 'Amazon', 'LinkedIn', 'Facebook', 'Twitter'];
+var companiesCorrect = ['Apple', 'Hecker'];
+
+// if (companiesQuestion === 'Apple' || companiesQuestion === 'Hecker') {
+//   console.log('correct');
+// } else {
+//   console.log('wrong');
+// } // Always true? ... Should work now.
+
+// if ('companiesCorrect') {
+//   console.log('correct');
+// } else {
+//   console.log('wrong');
+// }  // Always true?
+
+for (var i = 0; i < companiesWorked; i++) {
+  var companiesQuestion = prompt('Guess which companies I have worked for. You have six guesses.');
+  if ('companiesQuestion' === 'companiesCorrect') {
+    console.log('correct');
+    break;
+  } else {
+    console.log(alert('Incorrect. You have ' + (companiesWorked -= 1) + ' guesses left.'));
+    // If incorrect, or false, run this code. Keep asking again until out of questions.
+  }
+}
+
+// //google array method. array.includes
+// //trying to compare.
+// companiesCorrect.includes('Put a variable here for user input, companiesQuestion'); // array to search through. compare to companiesCorrect
+
+// ### End of Multiple Correct Answers ###
+
 // var totalQuestions; // Integer. Tally of total number of all questions.
 // var totalCorrectAnswers; // Integer. Total number of correct answers given thus far.
 // var totalWrongAnswers; // Integer. Tracks how many wrong answers. Wrong guesses less than 6.
@@ -59,8 +92,6 @@ for (var i = 0; i < 4; i++) {
 // //var allQuestions = [1, 2, 3, 4, 5, 6, 7];
 // var answersYes = [];
 // var answersNo = [];
-
-// var companiesQuestion = prompt('Guess which companies I have worked for. You have six guesses.');
 
 // Upon using up those tries OR getting a correct answer, displays a message to the user indicating all of the possible correct answers.
 
